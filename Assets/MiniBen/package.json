@@ -1,0 +1,17 @@
+{
+    "author": {
+        "email": "mihal1073@outlook.com",
+        "name": "mihal1073",
+        "url": "https://ms0503.github.io"
+    },
+    "description": "The miniature Big Ben with chime function",
+    "displayName": "Mini Ben",
+    "name": "dev.ms0503.mini-ben",
+    "repo": "https://ms0503.github.io/vpm.json",
+    "unity": "2022.3",
+    "url": "https://github.com/ms0503/mini-ben",
+    "version": "1.0.0",
+    "vpmDependencies": {
+        "com.vrchat.worlds": ">=3.4.0"
+    }
+}
