@@ -2,7 +2,6 @@
 using UdonSharp;
 using UnityEngine;
 
-// ReSharper disable PossibleNullReferenceException
 namespace MiniBen {
     public sealed class Clock : UdonSharpBehaviour {
         [Header("正時鐘")]
@@ -58,43 +57,48 @@ namespace MiniBen {
         }
 
         public void Play0Min() {
+            // ReSharper disable once PossibleNullReferenceException
             this._audio.PlayOneShot(this.sound0Min);
         }
 
         public void Play15Min() {
+            // ReSharper disable once PossibleNullReferenceException
             this._audio.PlayOneShot(this.sound15Min);
         }
 
         public void Play30Min() {
+            // ReSharper disable once PossibleNullReferenceException
             this._audio.PlayOneShot(this.sound30Min);
         }
 
         public void Play45Min() {
+            // ReSharper disable once PossibleNullReferenceException
             this._audio.PlayOneShot(this.sound45Min);
         }
 
         public void PlayHour() {
+            // ReSharper disable once PossibleNullReferenceException
             this._audio.PlayOneShot(this.soundHour);
         }
 
         public void PlayTest0Min() {
             Debug.Log("正時鐘をテスト...");
-            this._audio.PlayOneShot(this.sound0Min);
+            this.SendCustomEvent(nameof(this.Play0Min));
         }
 
         public void PlayTest15Min() {
             Debug.Log("15分鐘をテスト...");
-            this._audio.PlayOneShot(this.sound15Min);
+            this.SendCustomEvent(nameof(this.Play15Min));
         }
 
         public void PlayTest30Min() {
             Debug.Log("半時鐘をテスト...");
-            this._audio.PlayOneShot(this.sound30Min);
+            this.SendCustomEvent(nameof(this.Play30Min));
         }
 
         public void PlayTest45Min() {
             Debug.Log("45分鐘をテスト...");
-            this._audio.PlayOneShot(this.sound45Min);
+            this.SendCustomEvent(nameof(this.Play45Min));
         }
 
         public void PlayTestHour() {

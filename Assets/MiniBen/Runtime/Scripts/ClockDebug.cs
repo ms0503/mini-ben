@@ -1,7 +1,6 @@
 ﻿using UdonSharp;
 using UnityEngine;
 
-// ReSharper disable PossibleNullReferenceException
 namespace MiniBen {
     public class ClockDebug : UdonSharpBehaviour {
         [Header("ボタン種")]
@@ -15,6 +14,8 @@ namespace MiniBen {
         }
 
         public override void Interact() {
+            // ReSharper disable once SwitchStatementHandlesSomeKnownEnumValuesWithDefault
+            // ReSharper disable push PossibleNullReferenceException
             switch(this.type) {
                 case ButtonType.Zero:
                     this._clock.PlayTest0Min();
@@ -32,6 +33,7 @@ namespace MiniBen {
                     this._clock.PlayTestHour();
                     break;
             }
+            // ReSharper disable pop PossibleNullReferenceException
         }
     }
 

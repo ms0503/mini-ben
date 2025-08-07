@@ -3,19 +3,26 @@
     "com.vrchat.worlds": {
       "version": "3.7.5"
     },
+    "net.narazaka.vrchat.tmp-fallback-fonts-jp": {
+      "version": "1.0.2"
+    },
     "com.vrchat.core.vpm-resolver": {
       "version": "0.1.29"
     }
   },
   "locked": {
     "com.vrchat.worlds": {
-      "version": "3.7.6",
+      "version": "3.8.2",
       "dependencies": {
-        "com.vrchat.base": "3.7.6"
+        "com.vrchat.base": "3.8.2"
       }
     },
     "com.vrchat.base": {
-      "version": "3.7.6",
+      "version": "3.8.2",
+      "dependencies": {}
+    },
+    "net.narazaka.vrchat.tmp-fallback-fonts-jp": {
+      "version": "1.0.2",
       "dependencies": {}
     },
     "com.vrchat.core.vpm-resolver": {

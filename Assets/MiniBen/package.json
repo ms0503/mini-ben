@@ -10,7 +10,7 @@
     "repo": "https://ms0503.github.io/vpm.json",
     "unity": "2022.3",
     "url": "https://github.com/ms0503/mini-ben",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "vpmDependencies": {
         "com.vrchat.worlds": ">=3.4.0"
     }
